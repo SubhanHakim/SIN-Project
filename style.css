@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&display=swap");
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --primaryColor: #0077ff;
+  --darkBlack: #222222;
+  --subtleGray: #f8f8f8;
+  --gray: #666666;
+  --textGray: #333333;
+}
+
+header {
+  box-shadow: 0px 4px 8px 0px rgba(171, 190, 209, 0.4);
+  background-color: white;
+}
+
+.nav-head {
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand .logo-text a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 900;
+  color: var(--textGray);
+  cursor: pointer;
+  letter-spacing: 1%;
+}
+
+.nav-list nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list nav ul a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--darkBlack);
+  font-weight: 500;
+}
+
+.btn-primary {
+  padding: 12px 20px;
+  border: none;
+  background: var(--primaryColor);
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.btn-secondary {
+  padding: 12px 20px;
+  border: 2px solid var(--primaryColor);
+  background: none;
+  color: var(--primaryColor);
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+#hero {
+  padding: 100px;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-sub {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--darkBlack);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.text-head {
+  font-size: 60px;
+  line-height: 75px;
+  color: var(--darkBlack);
+}
+.text-head span {
+  color: var(--primaryColor);
+}
+
+.width-text {
+  width: 500px;
+}
+
+.text-sub {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 36px;
+  color: var(--darkBlack);
+}
+
+.text-subs {
+  width: 620px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  color: var(--darkBlack);
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-hero img {
+  width: 550px;
+  height: 550px;
+}
+
+.btn-content {
+  display: flex;
+  gap: 30px;
+}
+
+.bg-skills {
+  padding: 50px 100px;
+  background: var(--subtleGray);
+}
+
+.logo-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills {
+  width: 80px;
+  filter: saturate(0);
+  transition: all 0.5s ease-in-out;
+}
+.skills:nth-child(2) {
+  filter: contrast(0);
+}
+
+.skills:hover {
+  filter: saturate(1);
+  filter: contrast(1);
+}
+
+#about {
+  padding: 100px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 30px;
+  align-items: center;
+}
+
+.text-section {
+  color: var(--primaryColor);
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conten-prog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.porg-bar {
+  width: 100%;
+}
+
+.border-prog {
+  width: 100%;
+  background-color: #eee;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.bar-prog {
+  background-color: var(--primaryColor);
+  height: 20px;
+  border-radius: 10px;
+}
+
+.text-prog {
+  display: flex;
+  justify-content: space-between;
+}
+
+#service {
+  padding: 100px;
+}
+
+.about-content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.text-subhead {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--darkBlack);
+  width: 700px;
+  text-align: center;
+}
+
+.grid-col-3 {
+  display: grid;
+  justify-content: space-between;
+  gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0px 4px 8px 0px rgba(171, 190, 209, 0.4);
+}
+
+.sub-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--textGray);
+}
+
+.head-text {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#project {
+  padding: 100px;
+}
+.grid-col-project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

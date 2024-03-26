@@ -4,50 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio | Subhan Hakim</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Headar Section -->
     <header>
-      <div>
-        <div>
-          <h3>Subhan Hakim</h3>
+      <div class="nav-head">
+        <div class="brand">
+          <h3 class="logo-text"><a href="#">Subhan Hakim</a></h3>
         </div>
-        <div>
+        <div class="nav-list">
           <nav>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About Me</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About Me</a></li>
               <li><a href="">Blog</a></li>
               <li><a href="">Sercvice</a></li>
               <li><a href="">Contact Me</a></li>
             </ul>
           </nav>
         </div>
-        <div>
-          <button>Let's Chat</button>
-        </div>
+        <button class="btn-primary">Let's Chat</button>
       </div>
     </header>
     <!-- Header end -->
 
     <!-- Hero Section -->
     <section id="hero">
-      <div>
-        <div>
-          <h3>Welcome to my Portfolio</h3>
-          <h2>
-            Hi I’m <span>Subhan Hakim</span> Front End Dev And UI/UX Designer
-          </h2>
-          <p>
-            Collaborate with highly skilled individuals, and I provide
-            high-quality service.
-          </p>
-          <div>
-            <button>Hire Me</button>
-            <button>Download CV</button>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="text-content">
+            <h3 class="hero-sub">Welcome to my Portfolio</h3>
+            <h2 class="text-head">
+              Hi I’m <span>Subhan Hakim</span> Front End Dev And UI/UX Designer
+            </h2>
+            <div class="width-text">
+              <p class="text-sub">
+                Collaborate with highly skilled individuals, and I provide
+                high-quality service.
+              </p>
+            </div>
+          </div>
+          <div class="btn-content">
+            <button class="btn-primary">Hire Me</button>
+            <button class="btn-secondary">Download CV</button>
           </div>
         </div>
-        <div>
+        <div class="img-hero">
           <img src="assets/profile1.png" alt="Subhan Hakim Pict" />
         </div>
       </div>
@@ -55,78 +58,100 @@
     <!-- Hero End -->
 
     <!-- Logo Tech Section -->
-    <div>
-      <div>
-        <img src="assets/React JS.png" alt="Logo1" />
-        <img src="assets/Nextjs.png" alt="Logo2" />
-        <img src="assets/Javascript.png" alt="Logo3" />
-        <img src="assets/Tailwind.png" alt="Logo4" />
-        <img src="assets/MongoDB.png" alt="Logo5" />
+    <div class="bg-skills">
+      <div class="logo-brand">
+        <img src="assets/react-2 (1).svg" alt="Logo1" class="skills"/>
+        <img src="assets/next-js.svg" alt="Logo2" class="skills" />
+        <img src="assets/javascript-1.svg" alt="Logo3" class="skills"/>
+        <img src="assets/tailwind-css-2.svg" alt="Logo4" class="skills" />
+        <img src="assets/mongodb-icon-1.svg" alt="Logo5" class="skills" />
       </div>
     </div>
     <!-- Logo Tech end -->
 
     <!-- About Me Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <div>
+      <div class="text-center">
+        <h2 class="text-section">About Me</h2>
+      </div>
+      <div class="about-content">
         <div>
           <img src="/assets/profile2.png" alt="" />
         </div>
-        <div>
+        <div class="about-content-right">
           <div>
-            <h2>
+            <h2 class="text-head">
               <span>1 Year’s Experience</span> on Front End Dev and UI/UX
               Designer
             </h2>
-            <p>
+          </div>
+          <div>
+            <p class="text-subs">
               Hello there! I'm <b>Subhan Nur Iqbal Hakim</b>. I specialize in
               <b>UI/UX design and Front End Dev</b>, and I'm deeply passionate
               and committed to my craft.
             </p>
           </div>
-          <div>
-            <div>
-              <button>Main Skilss</button>
-              <button>Certificate</button>
-              <button>Education</button>
-            </div>
-            <div>
-              <div>
+
+          <div class="btn-content">
+            <button class="btn-primary">Main Skilss</button>
+            <button class="btn-secondary">Certificate</button>
+            <button class="btn-secondary">Education</button>
+          </div>
+          <div class="conten-prog">
+            <div class="porg-bar">
+              <div class="text-prog">
                 <label for="">Tailwind CSS</label>
                 <span>100%</span>
-                <br />
-                <progress id="" value="100" max="100">50%</progress>
               </div>
-              <div>
-                <label for="">React JS</label>
-                <span>85%</span>
-                <br />
-                <progress id="" value="85" max="100">85%</progress>
+              <div class="border-prog">
+                <div class="bar-prog" style="width: 100%"></div>
               </div>
-              <div>
-                <label for="">UI/UX Design Figma</label>
-                <span>90%</span>
-                <br />
-                <progress id="" value="90" max="100">90%</progress>
-              </div>
-              <div>
-                <label for="">Node JS</label>
-                <span>50%</span>
-                <br />
-                <progress id="" value="50" max="100">50%</progress>
-              </div>
-              <div>
+            </div>
+            <div class="porg-bar">
+              <div class="text-prog">
                 <label for="">Monggo DB</label>
                 <span>70%</span>
-                <br />
-                <progress id="" value="70" max="100">70%</progress>
               </div>
-              <div>
+              <div class="border-prog">
+                <div class="bar-prog" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="porg-bar">
+              <div class="text-prog">
+                <label for="">React JS</label>
+                <span>85%</span>
+              </div>
+              <div class="border-prog">
+                <div class="bar-prog" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="porg-bar">
+              <div class="text-prog">
+                <label for="">UI/UX Design Figma</label>
+                <span>90%</span>
+              </div>
+              <div class="border-prog">
+                <div class="bar-prog" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="porg-bar">
+              <div class="text-prog">
+                <label for="">Node JS</label>
+                <span>50%</span>
+              </div>
+              <div class="border-prog">
+                <div class="bar-prog" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="porg-bar">
+              <div class="text-prog">
                 <label for="">Next JS</label>
                 <span>100%</span>
-                <br />
-                <progress id="" value="95" max="100">50%</progress>
+              </div>
+              <div class="border-prog">
+                <div class="bar-prog" style="width: 100%"></div>
               </div>
             </div>
           </div>
@@ -137,31 +162,37 @@
 
     <!-- Service Section -->
     <section id="service">
-      <div>
-        <h2>Service</h2>
-        <h1>Why Hire Me ?</h1>
+      <div class="text-center">
+        <h2 class="text-section">Service</h2>
+        <h1 class="text-subhead">Why Hire Me ?</h1>
       </div>
-      <div>
-        <div>
-          <img src="assets/Icon.png" alt="icon" />
-          <h3>Easy To Work In a Team</h3>
-          <p>
+      <div class="grid-col-3">
+        <div class="card">
+          <div>
+            <img src="assets/Icon.png" alt="icon" />
+          </div>
+          <h3 class="head-text">Easy To Work In a Team</h3>
+          <p class="sub-text">
             I really like working in a team because when I work in a team the
             work feels easier
           </p>
         </div>
-        <div>
-          <img src="assets/Icon1.png" alt="icon" />
-          <h3>likes to learn new things</h3>
-          <p>
+        <div class="card">
+          <div>
+            <img src="assets/Icon1.png" alt="icon" />
+          </div>
+          <h3 class="head-text">likes to learn new things</h3 class="head-text">
+          <p class="sub-text">
             I really like new things that I don't know yet, I feel like I want
             more
           </p>
         </div>
-        <div>
-          <img src="assets/Icon2.png" alt="icon" />
-          <h3>appreciate time</h3>
-          <p>
+        <div class="card">
+          <div>
+            <img src="assets/Icon2.png" alt="icon" />
+          </div>
+          <h3 class="head-text">appreciate time</h3>
+          <p class="sub-text">
             Time is very valuable, so I am a person who really appreciates time
           </p>
         </div>
@@ -171,18 +202,17 @@
 
     <!-- Project Section -->
     <section id="project">
-      <div>
-        <h2>Our Projects</h2>
-        <h1>Presenting My Design Portfolio and Case Studies</h1>
-      </div>
-      <div>
+      <div class="text-center">
+        <h2 class="text-section">Our Projects</h2>
+        <h1 class="text-subhead">Presenting My Design Portfolio and Case Studies</h1>
         <div>
-          <button>All</button>
-          <button>UI/UX Design</button>
-          <button>Front End Dev</button>
-          <button>Wordpress</button>
+          <button class="btn-primary">All</button>
+          <button class="btn-secondary">UI/UX Design</button>
+          <button class="btn-secondary">Front End Dev</button>
+          <button class="btn-secondary">Wordpress</button>
         </div>
-        <div>
+      </div>
+        <div class="grid-col-project">
           <div>
             <img src="assets/box.png" alt="" />
           </div>
@@ -313,7 +343,7 @@
               <label for="submitting"
                 >By submitting, i’m agreed to the Terms & Conditons</label
               >
-              <br>
+              <br />
               <button type="submit">Request Now</button>
             </div>
           </form>
@@ -331,10 +361,10 @@
         </div>
         <div>
           <h3>FOLLOW US:</h3>
-          <a href="#"><img src="assets/facebook icon.png" alt=""></a>
-          <a href="#"><img src="assets/icon_x.png" alt=""></a>
-          <a href="#"><img src="assets/icon linkedin.png" alt=""></a>
-          <a href="#"><img src="assets/icon email.png" alt=""></a>
+          <a href="#"><img src="assets/facebook icon.png" alt="" /></a>
+          <a href="#"><img src="assets/icon_x.png" alt="" /></a>
+          <a href="#"><img src="assets/icon linkedin.png" alt="" /></a>
+          <a href="#"><img src="assets/icon email.png" alt="" /></a>
         </div>
       </div>
     </footer>
