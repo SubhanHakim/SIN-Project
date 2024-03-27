@@ -348,6 +348,7 @@ header {
 
 #contact {
   background-color: var(--primaryColor);
+  position: relative;
 }
 
 .bg-contact {
@@ -421,4 +422,57 @@ header {
 .contact-textarea {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  background-color: var(--primaryColor);
+  padding: 40px 100px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+}
+
+.footer-text h3 {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.footer-subhead {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  border: #fff solid 80px;
+  border-radius: 100%;
+  opacity: 0.2;
+  position: absolute;
+  right: -20%;
+  overflow: hidden;
+}
+.circle2 {
+  width: 200px;
+  height: 200px;
+  border: #fff solid 40px;
+  border-radius: 100%;
+  opacity: 0.2;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  overflow: hidden;
 }
