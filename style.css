@@ -7,6 +7,7 @@ body {
   padding: 0;
   box-shadow: none;
   font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -282,6 +283,7 @@ header {
 .grid-col-project {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
   gap: 30px;
 }
 
@@ -311,8 +313,7 @@ header {
 
 .section-card {
   padding: 40px 100px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 30px;
 }
 
@@ -377,7 +378,7 @@ header {
 }
 
 .contact-information {
-  width: 100%;
+  /* width: 100%; */
   height: 280px;
   padding: 30px 50px;
   background-color: white;
@@ -475,4 +476,233 @@ footer {
   left: -10%;
   bottom: 0;
   overflow: hidden;
+}
+
+#humberger {
+  display: none;
+  color: var(--darkBlack);
+  font-size: 30px;
+}
+
+/* Versi Tablet */
+@media (max-width: 1281px) {
+  html {
+    overflow-x: hidden;
+  }
+  .nav-head {
+    padding: 40px 50px;
+  }
+  #btn-nav {
+    display: none;
+  }
+  .nav-list nav ul {
+    display: none;
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 50px 100px;
+    flex-direction: column;
+    background-color: var(--primaryColor);
+  }
+
+  #humberger {
+    display: block;
+  }
+  /* End Navbar */
+
+  #hero {
+    padding: 50px;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .text-content {
+    align-items: center;
+  }
+
+  .btn-content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills {
+    width: 50px;
+  }
+
+  /* About Section */
+  #about {
+    padding: 50px;
+  }
+  #profile2 {
+    display: none;
+  }
+  .text-mobile {
+    text-align: center;
+  }
+  .text-subs {
+    text-align: center;
+  }
+
+  /* Service Section */
+
+  #service {
+    padding: 50px;
+  }
+  .grid-col-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Project Sectiob */
+
+  #project {
+    padding: 50px;
+  }
+
+  .grid-col-project {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+  }
+
+  .card-img {
+    width: 300px;
+    justify-self: center;
+  }
+
+  .grid-col-project img {
+    width: 300px;
+  }
+
+  /* Contact */
+  .contact-content {
+    flex-direction: column;
+  }
+
+  /* Testimonial */
+
+  .section-card {
+    padding: 50px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+
+.text-head {
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.text-sub {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+  .nav-head {
+    padding: 30px 30px;
+  }
+  /* End Navbar */
+
+  #hero {
+    padding: 30px;
+  }
+
+  .hero-content {
+    gap: 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .text-content {
+    align-items: center;
+  }
+
+  .btn-content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bg-skills {
+    padding: 30px;
+  }
+
+  .skills {
+    width: 25px;
+  }
+
+  /* About Section */
+  #about {
+    padding: 30px;
+  }
+  #profile2 {
+    display: none;
+  }
+  .text-mobile {
+    text-align: center;
+  }
+  .text-subs {
+    text-align: center;
+  }
+
+  /* Service Section */
+
+  #service {
+    padding: 50px;
+  }
+  .grid-col-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Project Sectiob */
+
+  #project {
+    padding: 50px;
+  }
+
+  .grid-col-project {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+  }
+
+  .card-img {
+    width: 300px;
+    justify-self: center;
+  }
+
+  .grid-col-project img {
+    width: 300px;
+  }
+
+  /* Contact */
+  .contact-content {
+    flex-direction: column;
+  }
+
+  /* Testimonial */
+
+  .section-card {
+    padding: 50px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 50px;
+  }
 }

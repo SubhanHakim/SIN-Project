@@ -18,17 +18,20 @@
           <h3 class="logo-text"><a href="#">Subhan Hakim</a></h3>
         </div>
         <div class="nav-list">
-          <nav>
+          <nav id="navbar-list">
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="#about">About Me</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Sercvice</a></li>
-              <li><a href="">Contact Me</a></li>
+              <li><a href="#service">Sercvice</a></li>
+              <li><a href="#Testimonial">Testimonial</a></li>
+              <li><a href="#contact">Contact Me</a></li>
             </ul>
           </nav>
         </div>
-        <button class="btn-primary">Let's Chat</button>
+        <div class="btn">
+          <i class="fa-solid fa-bars" id="humberger"></i>
+          <button id="btn-nav" class="btn-primary">Let's Chat</button>
+        </div>
       </div>
     </header>
     <!-- Header end -->
@@ -79,17 +82,17 @@
         <h2 class="text-section">About Me</h2>
       </div>
       <div class="about-content">
-        <div>
+        <div id="profile2">
           <img src="/assets/profile2.png" alt="" />
         </div>
         <div class="about-content-right">
-          <div>
+          <div class="text-mobile">
             <h2 class="text-head">
               <span>1 Year’s Experience</span> on Front End Dev and UI/UX
               Designer
             </h2>
           </div>
-          <div>
+          <div class="text-center">
             <p class="text-subs">
               Hello there! I'm <b>Subhan Nur Iqbal Hakim</b>. I specialize in
               <b>UI/UX design and Front End Dev</b>, and I'm deeply passionate
@@ -219,22 +222,22 @@
         </div>
       </div>
       <div class="grid-col-project">
-        <div>
+        <div class="card-img">
           <img src="assets/box.png" alt="" />
         </div>
-        <div>
+        <div class="card-img">
           <img src="assets/box2.png" alt="" />
         </div>
-        <div>
+        <div class="card-img">
           <img src="assets/box3.png" alt="" />
         </div>
-        <div>
+        <div class="card-img">
           <img src="assets/box4.png" alt="" />
         </div>
-        <div>
+        <div class="card-img">
           <img src="assets/box5.png" alt="" />
         </div>
-        <div>
+        <div class="card-img">
           <img src="assets/box6.png" alt="" />
         </div>
       </div>
@@ -361,7 +364,7 @@
     <!-- Testimonial end -->
 
     <!-- Contact Section -->
-    <section id="contact" style="overflow: hidden;">
+    <section id="contact" style="overflow: hidden">
       <div class="circle"></div>
       <div class="circle2"></div>
       <div class="bg-contact">
@@ -428,7 +431,7 @@
     <!-- Contact End -->
 
     <!-- Footer -->
-    <footer style="position: sticky;">
+    <footer style="position: sticky">
       <div class="footer-content">
         <div class="footer-text">
           <h3>Subhan Hakim</h3>
