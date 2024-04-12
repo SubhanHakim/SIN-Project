@@ -36,26 +36,23 @@
       </div>
     </header> -->
     <nav>
-
-      <div class="logo">
-          Subhan Hakim
-      </div>
+      <div class="logo">Subhan Hakim</div>
 
       <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">product</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Galery</a></li>
-          <li><a href="">About</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">product</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Galery</a></li>
+        <li><a href="">About</a></li>
       </ul>
 
       <div class="menu-toggle">
-          <input type="checkbox" name="" id="">
-          <span></span>
-          <span></span>
-          <span></span>
+        <input type="checkbox" name="" id="" />
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-  </nav>
+    </nav>
     <!-- Header end -->
 
     <!-- Hero Section -->
@@ -407,27 +404,32 @@
           </div>
           <div class="contact-form">
             <form
+              id="contactForm"
               action="#"
               style="display: flex; flex-direction: column; gap: 20px"
             >
               <div class="contact-email">
-                <input type="text" class="form" placeholder="Name" />
-                <input type="email" class="form" placeholder="Email Address" />
+                <input type="text" class="form" id="fullname" name="fullname" placeholder="Name" maxlength="30" />
+                <input type="email" id="email" name="email" class="form" placeholder="Email Address" maxlength="40" />
               </div>
               <div class="contact-textarea">
                 <input
                   type="text"
                   class="form"
-                  placeholder="How Can help you ?"
+                  placeholder="No Handphone"
+                  maxlength="15"
+                  id="phone"
+                  name="phone"
                 />
                 <br />
                 <textarea
                   name="message"
-                  id=""
+                  id="message"
                   cols="30"
                   rows="10"
                   class="form"
                   placeholder="How Can help you ?"
+                  maxlength="60"
                 ></textarea>
               </div>
               <div style="display: flex; flex-direction: column">
@@ -470,6 +472,10 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>

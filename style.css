@@ -8,6 +8,7 @@ body {
   box-shadow: none;
   font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 nav {
@@ -706,6 +707,7 @@ footer {
   }
 
   /* Testimonial */
+
 
   .section-card {
     padding: 50px;
